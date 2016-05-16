@@ -5,7 +5,7 @@ Home: https://github.com/axiom-data-science/paegan-transport
 
 Package license: GPL-3.0
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Paegan-Transport - The parallellized Langragian transport model for NetCDF/OPeNDAP data, written on top of Paegan
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/paegan-transport-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/paegan-transport-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/paegan-transport-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/paegan-transport-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/paegan-transport-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/paegan-transport-feedstock/branch/master)
