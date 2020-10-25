@@ -10,7 +10,8 @@ source:
 
 build:
   number: 1001
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -21,7 +22,7 @@ requirements:
     - paegan
     - fiona
     - requests
-    - redis-py  # [not win]
+    - redis-py
     - geojson
     - pytables
 
@@ -29,7 +30,7 @@ test:
   imports:
     - paegan.transport
     - paegan.transport.bathymetry
-    - paegan.transport.controllers  # [not win]
+    - paegan.transport.controllers
     - paegan.transport.export
     - paegan.transport.forcers
     - paegan.transport.models
@@ -40,7 +41,7 @@ test:
 
 about:
   home: https://github.com/axiom-data-science/paegan-transport
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_file: LICENSE.txt
   summary: 'Paegan-Transport - The parallellized Langragian transport model for NetCDF/OPeNDAP data, written on top of Paegan.'
 
